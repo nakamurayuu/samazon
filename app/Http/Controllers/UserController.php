@@ -12,8 +12,9 @@ class UserController extends Controller
     public function mypage()
     {
         $user = Auth::user();
+        $b = 'マイページ';
         
-        return view('users.mypage', compact('user'));
+        return view('users.mypage', compact('user','b'));
     }
     /**
      * Show the form for editing the specified resource.
